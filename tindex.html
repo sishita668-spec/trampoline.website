@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YooHoo! Trampoline & Amusement Park - Sri Ganganagar</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Swiper JS CSS for carousel -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="tstyle.css?v=2.1">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header class="navbar-container sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid px-4">
+                <!-- Logo & Business Name -->
+                <a class="navbar-brand brand-logo" href="#home">
+                    <i class="fas fa-rocket logo-icon"></i>
+                    <span class="brand-text">YooHoo!</span>
+                </a>
+                <div class="brand-subtitle">Trampoline & Amusement Park</div>
+                
+                <!-- Hamburger Menu -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-menu mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#games">Games</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#parties">Parties</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pricing">Price Chart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Right Side: Contact & Social -->
+                <div class="header-right d-flex align-items-center gap-3">
+                    <a href="tel:+919950000000" class="phone-link d-none d-md-flex">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9950 000 000</span>
+                    </a>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="social-icon ig"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header> 
+
+    <!-- HERO SECTION - Image Carousel -->
+    <section id="home" class="hero-section">
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide hero-slide" style="background-image: url('photos/hero3.jpg.avif'); background-size: cover; background-position: center;">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title animate-title">Jump Into Fun at YooHoo!</h1>
+                        <p class="hero-subtitle">Experience the thrill of our world-class trampoline park</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary-custom" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+                            <button class="btn btn-secondary-custom" onclick="document.getElementById('games').scrollIntoView({behavior: 'smooth'});">Explore Activities</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide hero-slide" style="background-image: url('photos/hero2.jpg.avif'); background-size: cover; background-position: center;">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title animate-title">Celebrate, Play, and Make Memories!</h1>
+                        <p class="hero-subtitle">Perfect destination for birthday parties and family fun</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary-custom" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+                            <button class="btn btn-secondary-custom" onclick="document.getElementById('parties').scrollIntoView({behavior: 'smooth'});">Party Packages</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide hero-slide" style="background-image: url('photos/hero3.jpg'); background-size: cover; background-position: center;">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title animate-title">The Ultimate Adventure in Sri Ganganagar</h1>
+                        <p class="hero-subtitle">Safe, exciting, and unforgettable experiences await</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary-custom" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+                            <button class="btn btn-secondary-custom" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">About YooHoo!</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="row align-items-center g-5">
+                <!-- About Image -->
+                <div class="col-lg-6">
+                    <div class="about-image-wrapper">
+                        <img src="photos/about.jpg" alt="YooHoo Trampoline Park - Neon Lit Facility" class="about-image"> 
+                        <div class="image-badge">State-of-the-Art Facility</div>
+                    </div>
+                </div>
+
+                <!-- About Text -->
+                <div class="col-lg-6">
+                    <h3 class="about-title">Welcome to YooHoo! Trampoline & Amusement Park</h3>
+                    <p class="about-text">
+                        YooHoo! Trampoline & Amusement Park is Sri Ganganagar's most exciting indoor fun destination where kids, teenagers, and families can enjoy thrilling trampoline jumping, engaging games, spectacular birthday parties, and unforgettable adventures in a completely safe and energetic environment.
+                    </p>
+                    <p class="about-text">
+                        With state-of-the-art facilities, trained staff, and a commitment to safety, we create memories that last a lifetime!
+                    </p>
+
+                    <!-- Features Grid -->
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h5>Safe Environment</h5>
+                            <p>World-class safety standards and trained staff</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-smile"></i>
+                            </div>
+                            <h5>Fun Activities</h5>
+                            <p>Diverse games and attractions for all ages</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-birthday-cake"></i>
+                            </div>
+                            <h5>Birthday Parties</h5>
+                            <p>Customized party packages for celebrations</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h5>Family Entertainment</h5>
+                            <p>Perfect for families and group outings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GAMES & ATTRACTIONS SECTION -->
+    <section id="games" class="games-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Games & Attractions</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Explore our exciting activities designed for endless fun</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Game Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="game-card">
+                        <div class="game-image-wrapper">
+                            <img src="photos/arena.jpg" alt="Trampoline Jump Arena" class="arena-image">
+                            <div class="game-overlay">
+                                <span class="overlay-text">Jump Arena</span>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h4 class="game-title">Trampoline Jump Arena</h4>
+                            <p class="game-description">Experience the ultimate trampoline jumping experience with our massive arena featuring connected trampolines.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="game-card">
+                        <div class="game-image-wrapper">
+                            <img src="photos/foampit.jpg" alt="Foam Pit" class="foam-pit-image">
+                            <div class="game-overlay">
+                                <span class="overlay-text">Foam Pit</span>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h4 class="game-title">Foam Pit</h4>
+                            <p class="game-description">Jump and dive into our soft foam pit zone for safe and exhilarating aerial tricks and flips.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="game-card">
+                        <div class="game-image-wrapper">
+                            <img src="photos/kidsplay.jpg" alt="Kids Play Zone" class="kids-play-image">
+                            <div class="game-overlay">
+                                <span class="overlay-text">Play Zone</span>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h4 class="game-title">Kids Play Zone</h4>
+                            <p class="game-description">Specially designed for younger children with age-appropriate trampolines and interactive play structures.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="game-card">
+                        <div class="game-image-wrapper">
+                            <img src="photos/arcade.jpg" alt="Arcade Games" class="arcade-image">
+                            <div class="game-overlay">
+                                <span class="overlay-text">Arcade Games</span>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h4 class="game-title">Arcade Games</h4>
+                            <p class="game-description">Latest and most exciting arcade games including racing, shooting, and skill-based challenges.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="game-card">
+                        <div class="game-image-wrapper">
+                            <img src="photos/birthday.jpg" alt="Birthday Party Area" class="birthday-image">
+                            <div class="game-overlay">
+                                <span class="overlay-text">Party Area</span>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h4 class="game-title">Birthday Party Area</h4>
+                            <p class="game-description">Dedicated party zone with tables, decorations, and special entertainment for your celebration.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="game-card">
+                        <div class="game-image-wrapper">
+                            <img src="photos/adventure.jpg" alt="Adventure Activities" class="adventure-image">
+                            <div class="game-overlay">
+                                <span class="overlay-text">Adventures</span>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h4 class="game-title">Adventure Activities</h4>
+                            <p class="game-description">Thrilling obstacle courses, climbing walls, and adventure challenges for the brave and adventurous.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTIES SECTION -->
+    <section id="parties" class="parties-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Birthday Parties & Events</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Make your celebration unforgettable with our party packages</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Party Package 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="party-card">
+                        <div class="party-icon">
+                            <i class="fas fa-balloon"></i>
+                        </div>
+                        <h4 class="party-title">Kids Birthday Party</h4>
+                        <ul class="party-features">
+                            <li><i class="fas fa-check"></i> 1 Hour Play Time</li>
+                            <li><i class="fas fa-check"></i> Dedicated Party Area</li>
+                            <li><i class="fas fa-check"></i> Cake & Refreshments</li>
+                            <li><i class="fas fa-check"></i> Party Staff Assistance</li>
+                            <li><i class="fas fa-check"></i> Up to 15 Kids</li>
+                        </ul>
+                        <div class="party-price">From <span>₹2,999</span></div>
+                        <button class="btn btn-party" data-bs-toggle="modal" data-bs-target="#bookingModal">Book a Party</button>
+                    </div>
+                </div>
+
+                <!-- Party Package 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="party-card featured">
+                        <div class="party-badge">Most Popular</div>
+                        <div class="party-icon">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h4 class="party-title">Premium Party Package</h4>
+                        <ul class="party-features">
+                            <li><i class="fas fa-check"></i> 2 Hour Play Time</li>
+                            <li><i class="fas fa-check"></i> Large Party Area</li>
+                            <li><i class="fas fa-check"></i> Catering Service</li>
+                            <li><i class="fas fa-check"></i> Decorations Included</li>
+                            <li><i class="fas fa-check"></i> Up to 30 Kids</li>
+                        </ul>
+                        <div class="party-price">From <span>₹5,999</span></div>
+                        <button class="btn btn-party" data-bs-toggle="modal" data-bs-target="#bookingModal">Book a Party</button>
+                    </div>
+                </div>
+
+                <!-- Party Package 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="party-card">
+                        <div class="party-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="party-title">Grand Celebration Package</h4>
+                        <ul class="party-features">
+                            <li><i class="fas fa-check"></i> 3 Hour Play Time</li>
+                            <li><i class="fas fa-check"></i> Exclusive Hall Rental</li>
+                            <li><i class="fas fa-check"></i> Full Catering Service</li>
+                            <li><i class="fas fa-check"></i> Entertainment & Games</li>
+                            <li><i class="fas fa-check"></i> Unlimited Kids</li>
+                        </ul>
+                        <div class="party-price">From <span>₹8,999</span></div>
+                        <button class="btn btn-party" data-bs-toggle="modal" data-bs-target="#bookingModal">Book a Party</button>
+                    </div>
+                </div>
+
+                <!-- School Outing -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="event-highlight-card">
+                        <div class="event-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="event-content">
+                            <h4>School Outings & Group Tours</h4>
+                            <p>Perfect educational entertainment for school groups. Special group discounts available for 25+ students.</p>
+                            <button class="btn btn-sm btn-event" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Family Celebration -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="event-highlight-card">
+                        <div class="event-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="event-content">
+                            <h4>Family Celebrations & Reunions</h4>
+                            <p>Celebrate with extended family and friends. Customizable packages for weddings, anniversaries, and reunions.</p>
+                            <button class="btn btn-sm btn-event" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICE CHART SECTION -->
+    <section id="pricing" class="pricing-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Price Chart</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Affordable pricing for everyone</p>
+            </div>
+
+            <div class="pricing-toggle text-center">
+                <div class="pricing-toggle-group" role="group" aria-label="Choose pricing day">
+                    <input type="radio" class="btn-check" name="pricing-options" id="weekday" checked>
+                    <label class="pricing-toggle-option" for="weekday">
+                        <i class="fas fa-sun"></i>
+                        <span>Weekday</span>
+                    </label>
+
+                    <input type="radio" class="btn-check" name="pricing-options" id="weekend">
+                    <label class="pricing-toggle-option" for="weekend">
+                        <i class="fas fa-star"></i>
+                        <span>Weekend</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="row g-4 pricing-grid">
+                <!-- 30 Minutes -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="pricing-card">
+                        <div class="pricing-icon"><i class="fas fa-bolt"></i></div>
+                        <div class="pricing-header">
+                            <h4 class="pricing-title">30 Minutes</h4>
+                            <p class="pricing-subtitle">Quick Fun</p>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price-amount">
+                                <span class="currency">₹</span>
+                                <span class="amount weekday-price" data-weekday="299" data-weekend="399">299</span>
+                                <span class="period">/person</span>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-check"></i> 30 Minutes Jump Time</li>
+                                <li><i class="fas fa-check"></i> Access to Main Arena</li>
+                                <li><i class="fas fa-check"></i> Basic Safety Gear</li>
+                                <li><i class="fas fa-times opacity-50"></i> Arcade Credits</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-pricing" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- 60 Minutes -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Best Value</div>
+                        <div class="pricing-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="pricing-header">
+                            <h4 class="pricing-title">60 Minutes</h4>
+                            <p class="pricing-subtitle">Full Experience</p>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price-amount">
+                                <span class="currency">₹</span>
+                                <span class="amount weekday-price" data-weekday="499" data-weekend="699">499</span>
+                                <span class="period">/person</span>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-check"></i> 60 Minutes Jump Time</li>
+                                <li><i class="fas fa-check"></i> All Attractions Access</li>
+                                <li><i class="fas fa-check"></i> Safety Equipment</li>
+                                <li><i class="fas fa-check"></i> 100 Arcade Credits</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-pricing" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Party Package -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="pricing-card">
+                        <div class="pricing-icon"><i class="fas fa-users"></i></div>
+                        <div class="pricing-header">
+                            <h4 class="pricing-title">Party Package</h4>
+                            <p class="pricing-subtitle">Group Fun</p>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price-amount">
+                                <span class="currency">₹</span>
+                                <span class="amount weekday-price" data-weekday="2999" data-weekend="3999">2999</span>
+                                <span class="period">/group</span>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-check"></i> 1 Hour Play Time</li>
+                                <li><i class="fas fa-check"></i> 15 Kids Included</li>
+                                <li><i class="fas fa-check"></i> Party Area Rental</li>
+                                <li><i class="fas fa-check"></i> Staff Assistance</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-pricing" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFFERS SECTION -->
+    <section id="offers" class="offers-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Special Offers</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Limited time promotions for maximum savings</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Offer Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="offer-card">
+                        <div class="offer-ribbon">
+                            <span>20% OFF</span>
+                        </div>
+                        <div class="offer-header">
+                            <i class="fas fa-sun"></i>
+                            <h4>Weekend Special</h4>
+                        </div>
+                        <p class="offer-description">Get 20% discount on all weekend sessions. Valid Saturday & Sunday. Book before 5 PM for instant confirmation.</p>
+                        <div class="offer-validity">Valid till: 30 June 2026</div>
+                        <button class="btn btn-offer" data-bs-toggle="modal" data-bs-target="#bookingModal">Claim Offer</button>
+                    </div>
+                </div>
+
+                <!-- Offer Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="offer-card">
+                        <div class="offer-ribbon pink">
+                            <span>50% OFF</span>
+                        </div>
+                        <div class="offer-header">
+                            <i class="fas fa-birthday-cake"></i>
+                            <h4>Birthday Month Offer</h4>
+                        </div>
+                        <p class="offer-description">Celebrate your birthday with 50% off on your birthday month. Bring a valid ID to avail this exclusive birthday offer.</p>
+                        <div class="offer-validity">Valid till: 31 December 2026</div>
+                        <button class="btn btn-offer" data-bs-toggle="modal" data-bs-target="#bookingModal">Claim Offer</button>
+                    </div>
+                </div>
+
+                <!-- Offer Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="offer-card">
+                        <div class="offer-ribbon green">
+                            <span>35% OFF</span>
+                        </div>
+                        <div class="offer-header">
+                            <i class="fas fa-users"></i>
+                            <h4>Group Booking Discount</h4>
+                        </div>
+                        <p class="offer-description">Book for 10+ members and get 35% discount. Perfect for corporate team building, school outings, and family groups.</p>
+                        <div class="offer-validity">Valid till: 31 August 2026</div>
+                        <button class="btn btn-offer" data-bs-toggle="modal" data-bs-target="#bookingModal">Claim Offer</button>
+                    </div>
+                </div>
+
+                <!-- Offer Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="offer-card">
+                        <div class="offer-ribbon purple">
+                            <span>FREE</span>
+                        </div>
+                        <div class="offer-header">
+                            <i class="fas fa-ticket-alt"></i>
+                            <h4>Refer & Earn</h4>
+                        </div>
+                        <p class="offer-description">Refer a friend and get free arcade credits worth ₹500. No limit on referrals. Share the fun and earn rewards!</p>
+                        <div class="offer-validity">Ongoing Program</div>
+                        <button class="btn btn-offer" data-bs-toggle="modal" data-bs-target="#bookingModal">Share & Earn</button>
+                    </div>
+                </div>
+
+                <!-- Offer Card 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="offer-card">
+                        <div class="offer-ribbon">
+                            <span>COMBO</span>
+                        </div>
+                        <div class="offer-header">
+                            <i class="fas fa-star"></i>
+                            <h4>Family Combo</h4>
+                        </div>
+                        <p class="offer-description">60 minutes + meal combo for 4 people. Includes pizza, drinks, and dessert. Maximum value for family fun.</p>
+                        <div class="offer-validity">Valid till: 31 July 2026</div>
+                        <button class="btn btn-offer" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Offer Card 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="offer-card">
+                        <div class="offer-ribbon green">
+                            <span>15% OFF</span>
+                        </div>
+                        <div class="offer-header">
+                            <i class="fas fa-calendar"></i>
+                            <h4>Season Pass</h4>
+                        </div>
+                        <p class="offer-description">Unlimited visits for 3 months with 15% discount on food. Valid any day, any time. Perfect for regular visitors!</p>
+                        <div class="offer-validity">Valid till: 30 November 2026</div>
+                        <button class="btn btn-offer" data-bs-toggle="modal" data-bs-target="#bookingModal">Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTS SECTION -->
+    <section id="events" class="events-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Upcoming Events</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Join us for exciting celebrations and special events</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Event 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="event-card">
+                        <div class="event-date-badge">
+                            <span class="date-day">15</span>
+                            <span class="date-month">MAY</span>
+                        </div>
+                        <div class="event-image kids-fun-image" style="background-image: url('photos/kidsfun.jpg');">
+                            <div class="event-image-overlay"></div>
+                        </div>
+                        <div class="event-details">
+                            <h4 class="event-title">Kids Fun Day</h4>
+                            <p class="event-description">A special day for kids with games, prizes, and entertainment. Special discounts on all activities.</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-clock"></i> 10 AM - 6 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Entire Park</span>
+                            </div>
+                            <button class="btn btn-event-sm" data-bs-toggle="modal" data-bs-target="#bookingModal">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="event-card">
+                        <div class="event-date-badge">
+                            <span class="date-day">22</span>
+                            <span class="date-month">MAY</span>
+                        </div>
+                        <div class="event-image" style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&h=250&fit=crop');">
+                            <div class="event-image-overlay"></div>
+                        </div>
+                        <div class="event-details">
+                            <h4 class="event-title">Weekend Carnival</h4>
+                            <p class="event-description">Exciting carnival with rides, games, food stalls, and live entertainment for the entire family.</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-clock"></i> 11 AM - 10 PM</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Entire Park</span>
+                            </div>
+                            <button class="btn btn-event-sm" data-bs-toggle="modal" data-bs-target="#bookingModal">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="event-card">
+                        <div class="event-date-badge">
+                            <span class="date-day">01</span>
+                            <span class="date-month">JUN</span>
+                        </div>
+                        <div class="event-image birthday-special-image" style="background-image: url('photos/bspecail.jpg');">
+                            <div class="event-image-overlay"></div>
+                        </div>
+                        <div class="event-details">
+                            <h4 class="event-title">Birthday Bash Specials</h4>
+                            <p class="event-description">Celebrate all June birthdays with exclusive birthday bash offers and special entertainment programs.</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-clock"></i> All Day</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Party Area</span>
+                            </div>
+                            <button class="btn btn-event-sm" data-bs-toggle="modal" data-bs-target="#bookingModal">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUOTE SECTION -->
+    <section class="quote-section py-5">
+        <div class="quote-background">
+            <div class="quote-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container position-relative">
+            <div class="quote-content text-center">
+                <h2 class="quote-text">
+                    <i class="fas fa-quote-left"></i>
+                    Don't wait for fun to find you — create your own adventure at YooHoo!
+                    <i class="fas fa-quote-right"></i>
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Get in touch with us for any queries or bookings</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Contact Info Cards -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h5 class="contact-title">Address</h5>
+                        <p class="contact-text">123 Amusement Park Road<br>Sri Ganganagar, Rajasthan 335001</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h5 class="contact-title">Phone</h5>
+                        <p class="contact-text">
+                            <a href="tel:+919950000000">+91 9950 000 000</a><br>
+                            <a href="tel:+919876543210">+91 9876 543 210</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5 class="contact-title">Email</h5>
+                        <p class="contact-text">
+                            <a href="mailto:info@yoohopark.com">info@yoohopark.com</a><br>
+                            <a href="mailto:bookings@yoohopark.com">bookings@yoohopark.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h5 class="contact-title">Hours</h5>
+                        <p class="contact-text">
+                            Mon - Fri: 2 PM - 9 PM<br>
+                            Sat - Sun: 10 AM - 10 PM
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <!-- Contact Form -->
+                <div class="col-lg-6">
+                    <div class="contact-form-wrapper">
+                        <h4 class="form-title">Send us a Message</h4>
+                        <form id="contactForm" class="contact-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="col-lg-6">
+                    <div class="map-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.7618789923503!2d73.8819!3d29.9241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394549e5a0b0b0b0%3A0xb0b0b0b0b0b0b0b0!2sSri%20Ganganagar!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="350" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-4 py-5">
+                <!-- About Column -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-column">
+                        <h5 class="footer-title">
+                            <i class="fas fa-rocket"></i> YooHoo!
+                        </h5>
+                        <p class="footer-text">
+                            Sri Ganganagar's premier destination for family fun, trampoline jumping, and unforgettable adventures. Creating memories since 2020.
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://facebook.com" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="https://youtube.com" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Useful Links Column -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-column">
+                        <h5 class="footer-title">Useful Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#games">Games & Activities</a></li>
+                            <li><a href="#parties">Birthday Parties</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#offers">Offers</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-column">
+                        <h5 class="footer-title">Contact Info</h5>
+                        <div class="footer-contact">
+                            <p><strong>Phone:</strong></p>
+                            <p><a href="tel:+919950000000">+91 9950 000 000</a></p>
+                            <p class="mt-3"><strong>Address:</strong></p>
+                            <p>123 Amusement Park Road<br>Sri Ganganagar, Rajasthan 335001</p>
+                            <p class="mt-3"><strong>Email:</strong></p>
+                            <p><a href="mailto:info@yoohopark.com">info@yoohopark.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p>&copy; 2026 YooHoo! Trampoline & Amusement Park. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p>Designed & Developed with <i class="fas fa-heart heart-icon"></i> for Family Fun</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOKING MODAL -->
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">Book Your Slot</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Select Date</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Select Time</label>
+                            <select class="form-select" required>
+                                <option value="">Choose a time slot</option>
+                                <option value="10:00-11:00">10:00 AM - 11:00 AM</option>
+                                <option value="11:00-12:00">11:00 AM - 12:00 PM</option>
+                                <option value="12:00-13:00">12:00 PM - 1:00 PM</option>
+                                <option value="13:00-14:00">1:00 PM - 2:00 PM</option>
+                                <option value="14:00-15:00">2:00 PM - 3:00 PM</option>
+                                <option value="15:00-16:00">3:00 PM - 4:00 PM</option>
+                                <option value="16:00-17:00">4:00 PM - 5:00 PM</option>
+                                <option value="17:00-18:00">5:00 PM - 6:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Number of People</label>
+                            <input type="number" class="form-control" min="1" max="20" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary-custom w-100">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="btn-back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS for carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="tscript.js?v=2.1"></script>
+</body>
+</html>
